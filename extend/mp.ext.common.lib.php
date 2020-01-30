@@ -81,6 +81,7 @@ function get_datetime() {
 	return date("Y-m-d H:i:s") . substr((string)$rounded, 1, strlen($rounded)) . PHP_EOL;
 }
 
+// 날짜에 '-' 넣기
 function conv_date($str, $options='') {
 	if (!$str) { return false; }
 	switch(strlen($str)) {
